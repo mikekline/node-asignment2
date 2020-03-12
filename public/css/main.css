@@ -1,0 +1,43 @@
+
+/**********************resets********************/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+
+/*********************************footer*******************************/
+
+
+footer {
+  align-self: flex-end;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  height: 4rem;
+  width: 100%;
+  margin-bottom: 0;
+  padding: .5rem 0;
+  text-align: center;
+  background-color: #50514f;
+  color: whitesmoke;
+}
+
+footer ul li {
+  padding: 0 1rem;
+}
+
+footer a {
+  color: whitesmoke;
+}
+
+/*********************************end of footer*******************************/
