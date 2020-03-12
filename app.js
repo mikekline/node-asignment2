@@ -9,7 +9,9 @@ app.get('/',function(req, res) {
   res.render('index');
 });
 
-
+app.get('/gallery',function(req, res) {  
+  res.render('gallery');
+});
 
 
 
