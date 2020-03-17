@@ -1,13 +1,15 @@
-<%- include('partials/header') %> 
+<%- include('partials/header') %>
 
 <% gallery.forEach(galleryImage => { %>
-
- <figure>
-  <img src="" alt="">
-  <figcaption>
-  
-  </figcaption>
-</figure>
+  <a class="gallery" href="./gallery/<%= galleryImage.id %>">
+    <figure>
+      <img src="images/sm/<%= galleryImage.fileName %>" alt="<%= galleryImage.title %>" height="233px" width="350px">
+      <figcaption>
+        <p><h1><%= galleryImage.title %></h1></p>
+        <p>photographer: <%= galleryImage.attribution.credit %></p>
+      </figcaption>
+    </figure>
+  </a>
  <% }); %>
 
 <%- include('partials/footer') %>

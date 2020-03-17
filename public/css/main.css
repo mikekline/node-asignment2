@@ -13,6 +13,28 @@ ul {
 }
 
 
+/*********************************gallery*******************************/
+
+.gallery {
+  text-decoration: none;
+  float:left;
+  margin: 10px;
+}
+
+figure {
+  width:350px;
+  height:350px;
+  background-color: lightblue;
+  box-shadow: 2px 2px 2px grey;
+}
+
+figcaption {
+  text-align: center;
+}
+
+
+
+
 
 /*********************************footer*******************************/
 
@@ -39,5 +61,3 @@ footer ul li {
 footer a {
   color: whitesmoke;
 }
-
-/*********************************end of footer*******************************/

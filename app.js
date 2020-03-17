@@ -3,17 +3,19 @@ const express = require('express');
 const app = express();
 const ejs = require('ejs');
 
+
+const gallery = require("./gallery");
+app.locals.gallery = gallery;
+
 app.set('view engine','ejs');
 
-app.get('/',function(req, res) {  
+app.get('/',function(req, res) {
   res.render('index');
 });
 
-app.get('/gallery',function(req, res) {  
+app.get('/gallery',function(req, res) {
   res.render('gallery');
 });
-
-
 
 app.use(express.static(path.join(__dirname, 'public')));
 
